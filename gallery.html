@@ -1,0 +1,145 @@
+{% extends 'base.html' %}
+{% block title %}
+  Gallery Page
+{% endblock %}
+{% block content %}
+
+  <h1>This is Our Gallery Page</h1>
+  <section>
+    <div class="rt-container">
+      <div class="col-rt-12">
+        <div class="Scriptcontent">
+          <div class="container">
+            <a href="#img1"> 
+              <img class="small" src="{{url_for('static', filename='sheikh abdulwahab.jpg')}}">
+            </a>
+            <a href="#img2"> 
+                  <img class="small" src="{{url_for('static', filename='malam.jpg')}}">
+            </a>
+            <a href="#img3"> 
+                  <img class="small" src="{{url_for('static', filename='sheikh abdulwahab.jpg')}}">
+            </a>
+            <a href="#img4"> 
+                  <img class="small" src="{{url_for('static', filename='malam.jpg')}}">
+            </a>
+            <a href="#img5"> 
+                  <img class="small" src="{{url_for('static', filename='sheikh abdulwahab.jpg')}}">
+            </a>
+            <a href="#img6"> 
+              <img class="small" src="{{url_for('static', filename='malam.jpg')}}">
+            </a>
+            <a href="#img7"> 
+              <img class="small" src="{{url_for('static', filename='sheikh abdulwahab.jpg')}}">
+            </a>
+            <a href="#img8"> 
+              <img class="small" src="{{url_for('static', filename='photo.jpg')}}">
+            </a>
+            <a href="#_" class="lightbox" id="img1">
+              <div> 
+                <img src="{{url_for('static', filename='sheikh abdulwahab.jpg')}}"/> 
+                <p> Mahmud Co-founder Al-Intisar Prints. </p>
+              </div>
+            </a>
+            <a href="#_" class="lightbox" id="img2">
+              <div> 
+                <img src="{{url_for('static', filename='mahmud.png')}}"/> 
+                <p> The Racing</p>
+              </div>
+            </a>
+            <a href="#_" class="lightbox" id="img3">
+              <div> 
+                <img src="{{url_for('static', filename='photo.jpg')}}"/> 
+                <p> The Light </p>
+              </div>
+            </a>
+            <a href="#_" class="lightbox" id="img4">
+              <div> 
+                <img src="{{url_for('static', filename='pic.png')}}"/> 
+                <p> Cute Bird</p>
+              </div>
+            </a>
+            <a href="#_" class="lightbox" id="img5">
+              <div> 
+                <img src="{{url_for('static', filename='sheikh.jpg')}}"/> 
+                <p> The Car</p>
+              </div>
+            </a>
+            <a href="#_" class="lightbox" id="img6">
+              <div> 
+                <img src="{{url_for('static', filename='malam.jpg')}}"/> 
+                <p> The Fox</p>
+              </div>
+            </a>
+            <a href="#_" class="lightbox" id="img7">
+              <div> 
+                <img src="{{url_for('static', filename='sheikh abdulwahab.jpg')}}"/> 
+                <p> The War</p>
+              </div>
+            </a>
+            <a href="#_" class="lightbox" id="img8">
+              <div> 
+                <img src="{{url_for('static', filename='photo.jpg')}}"/> 
+                <p> The House</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <style>
+    .container {
+	display: block;
+	max-width: 800px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.small {
+	width: 180px;
+	height: auto;
+	position: relative;
+	margin: 3px;
+	border-radius: 5px;
+}
+
+.small:hover {
+	-webkit-transform: scale(1.03, 1.03);
+	transform: scale(1.03, 1.03);
+}
+
+.lightbox {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.7);
+}
+
+a div {
+	position: relative;
+	margin: auto auto;
+	text-align: center;
+}
+
+.lightbox:target {
+	display: -webkit-box;
+	display: flex;
+}
+
+.container a {
+	text-decoration: none;
+}
+
+.container p {
+	font-size: 20px;
+	color: white;
+	font-family: 'Poiret One';
+}
+  </style>
+{% endblock %}

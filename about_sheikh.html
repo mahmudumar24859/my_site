@@ -1,0 +1,117 @@
+{% extends 'base.html' %}
+{% block title %}
+  About Sheikh Page
+{% endblock %}
+{% block content %}
+  <h1>Brief History of Sheikh Abdulwahab Abdallah</h1>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="{{url_for('static', filename='sheikh abdulwahab.jpg')}}" alt="Jane" style="width:100%">
+      <div class="container">
+        <h1>Sheikh Abdulwahab Abdallah</h1>
+        <p style="text-align: center;">Imam Ahlussunnah Wal-Jama'a<br>
+          Chairman Bn Baaz Islamic Foundation<br> 
+          sheikhabdulwahababdallah@gmail.com<br>
+        WhatsApp: +2347018364232</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div style="margin: auto;" class="card">
+      <p style="padding: 20px; line-height: 2.5;">
+        Shaikh Abdulwahab is a renowned Islamic Scholar and preacher who has spent major part of his life in teaching and preaching 
+        of Islam. Together with Late Shaikh Ja’afar Mahmud Adam, they have contributed immensely in creating Islamic awareness within 
+        and outside the country. He is a graduate of Darul Hadith in Makkah and Islamic University of Madinah, Kulliyatul Hadith Wa 
+        Darasat al Islamiyya (Faculty of Hadith and Islamic Knowledge). He is the Chairman of Bin Baz Foundation, member, Shari’ah 
+        Commission of Zamfara State and member, National Supreme Council for Islamic Affairs (NSCIA). As part of his efforts towards 
+        propagation and development of Islam, Shaikh Abdulwahab has written several books on various topics including but not limited 
+        to Fatwa on Marriage and Divorce, Fatwa on Bid’a (innovation), issues of Hisba, Fatwa on Hajj (pilgrimage), Fatwa on Fasting 
+        among others. Some of his activities include weekly preaching at Usman Bin Affan Mosque Gadon Kaya, Lesson on the book of Sahih 
+        Muslim every weekend at Markaz Khulafa'ur rashidun, Sharada Federal Housing Estate, Weekly preaching for women and Sahihul 
+        Bukhari at Sharada, Fatwa with Radio Kano, Radio Express, Arewa Radio and a weekly program with the popular <b>Africa TV3 and Sunnah TV.</b> 
+        The Sheikh is married with children. May Almighty Allah Countinue to spare his life with Barakah and grant him Aljannatul Firdaus as his final Abode, Amin.
+      </p>
+    </div>
+  </div>
+</div>
+  
+
+<style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+    }
+    
+    html {
+      box-sizing: border-box;
+    }
+    
+    *, *:before, *:after {
+      box-sizing: inherit;
+    }
+    
+    .column {
+      float: left;
+      width: 50%;
+      margin-bottom: 16px;
+      padding: 20px 18px;
+    }
+    
+    .card {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      margin: 8px;
+    }
+    
+    .about-section {
+      padding: 50px;
+      text-align: center;
+      background-color: #474e5d;
+      color: white;
+    }
+    
+    .container {
+      padding: 0 16px;
+    }
+    
+    .container::after, .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+    
+    .title {
+      color: grey;
+    }
+    p{
+      text-align: justify;
+      line-height: 2;
+    }
+    
+    .button {
+      border: none;
+      outline: 0;
+      display: inline-block;
+      padding: 8px;
+      color: white;
+      background-color: #000;
+      text-align: center;
+      cursor: pointer;
+      width: 100%;
+    }
+    
+    .button:hover {
+      background-color: #555;
+    }
+    
+    @media screen and (max-width: 650px) {
+      .column {
+        width: 100%;
+        display: block;
+      }
+    }
+  </style>
+
+{% endblock %}
+

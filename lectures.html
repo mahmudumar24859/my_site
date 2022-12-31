@@ -1,0 +1,109 @@
+{% extends 'base.html' %}
+{% block title %}
+  Lectures Page
+{% endblock %}
+{% block content %}
+   
+<h1>Welcome to the Lectures Master Page</h1>
+<p style="text-align: center;"><b>By the Renowned Islamic Scholar Sheikh Abdulwahab Abdallah (Hafizahullah) <br> Imam Ahlussunnah Wal-Jama'a.</b></p>
+<div style="margin-bottom: 0; padding-bottom: 0;" class="row">
+  <div class="col-lg-6">
+    <table class="shadow p-3 mb-5 bg-body rounded" style="margin: auto;">
+      <tr style="border-bottom-width: 0; width: min-content;">
+        <td> <img src="{{url_for('static', filename='audio.jpg')}}" alt="" style="width:90px; height:90px; padding: 10px;"> </td>
+        <td style="padding-left: 20px; padding-right: 20px;"><p style="font-family: Ubuntu;">Lecture on...</p></td>
+        <td>
+          <button class="btn btn-primary c1" style="margin-right: 20px;" id="A1" onClick="pA1()">
+            <audio
+              src="http://docs.google.com/uc?export=open&id="autoplay loop></audio> Play
+          </button>              
+        </td>
+        </td>
+        <td style="padding-right: 10px;"><a href="https://drive.google.com/uc?export=download&id=" class="btn btn-primary" tabindex="-1" role="button" aria-disabled="true">Download</a></td>
+      </tr>
+    </table>
+  </div>
+  <div class="col-lg-6">
+    <table class="shadow p-3 mb-5 bg-body rounded" style="margin: auto;">
+      <tr style="border-bottom-width: 0; width: min-content;">
+        <td> <img src="{{url_for('static', filename='audio.jpg')}}" alt="" style="width:90px; height:90px; padding: 10px;"> </td>
+        <td style="padding-left: 20px; padding-right: 20px;"><p style="font-family: Ubuntu;">Lecture on...i</p></td>
+        <td>
+          <button type="button" class="btn btn-primary c2" style="margin-right: 20px;" id="A2" onClick="pA2()">
+            <audio
+              src="http://docs.google.com/uc?export=open&id=" autoplay loop></audio> Play
+          </button>              
+        </td>
+        <td style="padding-right: 10px;"><a href="https://drive.google.com/uc?export=download&id=" class="btn btn-primary" tabindex="-1" role="button" aria-disabled="true">Download</a></td>
+      </tr>
+    </table>
+  </div>
+</div>
+<div style="margin-top: 0; padding-top: 0; margin-bottom: 0; padding-bottom: 0;" class="row">
+  <div class="col-lg-6">
+    <table class="shadow p-3 mb-5 bg-body rounded" style="margin: auto;">
+      <tr style="border-bottom-width: 0; width: min-content;">
+        <td> <img src="{{url_for('static', filename='audio.jpg')}}" alt="" style="width:90px; height:90px; padding: 10px;"> </td>
+        <td style="padding-left: 20px; padding-right: 20px;"><p style="font-family: Ubuntu;">Lecture on...</p></td>
+        <td>
+          <button class="btn btn-primary c1" style="margin-right: 20px;" id="A3" onClick="pA3()">
+            <audio
+              src="http://docs.google.com/uc?export=open&id="autoplay loop></audio> Play
+          </button>              
+        </td>
+        </td>
+        <td style="padding-right: 10px;"><a href="https://drive.google.com/uc?export=download&id=" class="btn btn-primary" tabindex="-1" role="button" aria-disabled="true">Download</a></td>
+      </tr>
+    </table>
+  </div>
+  <div class="col-lg-6">
+    <table class="shadow p-3 mb-5 bg-body rounded" style="margin: auto;">
+      <tr style="border-bottom-width: 0; width: min-content;">
+        <td> <img src="{{url_for('static', filename='audio.jpg')}}" alt="" style="width:90px; height:90px; padding: 10px;"> </td>
+        <td style="padding-left: 20px; padding-right: 20px;"><p style="font-family: Ubuntu;">Lecture on...</p></td>
+        <td>
+          <button class="btn btn-primary c1" style="margin-right: 20px;" id="A4" onClick="pA4()">
+            <audio src="http://docs.google.com/uc?export=open&id="autoplay loop></audio>Play
+          </button>              
+        </td>
+        <td style="padding-right: 10px;"><a href="https://drive.google.com/uc?export=download&id=" class="btn btn-primary" tabindex="-1" role="button" aria-disabled="true">Download</a></td>
+      </tr>
+    </table>
+  </div>
+</div>  
+<div style="margin-top: 0; padding-top: 0; margin-bottom: 0; padding-bottom: 0;" class="row">
+  <div class="col-lg-6">
+    <table class="shadow p-3 mb-5 bg-body rounded" style="margin: auto;">
+      <tr style="border-bottom-width: 0; width: min-content;">
+        <td> <img src="{{url_for('static', filename='audio.jpg')}}" alt="" style="width:90px; height:90px; padding: 10px;"> </td>
+        <td style="padding-left: 20px; padding-right: 20px;"><p style="font-family: Ubuntu;">Lecture on...</p></td>
+        <td>
+          <button class="btn btn-primary c1" style="margin-right: 20px;" id="A5" onClick="pA5()">
+            <audio
+              src="http://docs.google.com/uc?export=open&id="autoplay loop></audio> Play
+          </button>              
+        </td>
+        </td>
+        <td style="padding-right: 10px;"><a href="https://drive.google.com/uc?export=download&id=" class="btn btn-primary" tabindex="-1" role="button" aria-disabled="true">Download</a></td>
+      </tr>
+    </table>
+  </div>
+  <div class="col-lg-6">
+    <table class="shadow p-3 mb-5 bg-body rounded" style="margin: auto;">
+      <tr style="border-bottom-width: 0; width: min-content;">
+        <td> <img src="{{url_for('static', filename='audio.jpg')}}" alt="" style="width:90px; height:90px; padding: 10px;"> </td>
+        <td style="padding-left: 20px; padding-right: 20px;"><p style="font-family: Ubuntu;">Lecture on...</p></td>
+        <td>
+          <button class="btn btn-primary c1" style="margin-right: 20px;" id="A6" onClick="pA6()">
+            <audio src="http://docs.google.com/uc?export=open&id="autoplay loop></audio>Play
+          </button>              
+        </td>
+        <td style="padding-right: 10px;"><a href="https://drive.google.com/uc?export=download&id=" class="btn btn-primary" tabindex="-1" role="button" aria-disabled="true">Download</a></td>
+      </tr>
+    </table>
+  </div>
+</div>  
+
+  
+
+{% endblock %}

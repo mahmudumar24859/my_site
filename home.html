@@ -1,0 +1,64 @@
+{% extends 'base.html' %}
+
+{% block title %}
+  Home Page
+{% endblock %}
+
+{% block content %}
+
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="card" style="width: 28rem; padding-right: 20px;">
+        <img src="{{url_for('static', filename='sheikh abdulwahab.jpg')}}" class="card-img-top" alt="Sheikh's Picture">
+        <div class="card-body">
+          <h3 class="card-title">Sheikh Abdulwahab Abdallah</h3>
+          <p class="card-text"><b>Imam Ahlussunnah Wal-Jama, Kano <br>  Federal Republic of Nigeria.</b></p>
+          <a href="{{url_for('About_Sheikh_Page')}}" class="btn btn-primary" style="margin-top: 40px;">Read More About Sheikh</a>
+        </div>
+      </div>
+      <div class="col-lg-6" style="padding: 40px; margin: auto;">
+        <h4 style="text-align: center;" class="fp"><b>Welcome Address</b></h4>
+        <h5 class="fp">Assalamu Alaikum Warahmatullah, We Welcome all the muslim brothers and sisters visiting this blessed site,
+          we pray for Almighty Allah to blessed every one of us here and to grant us His Aljannatul Firdaus, Amin.
+          Thanks Yours: Sheikh Abdulwahab Abdallah (Imamu Ahlussunnah Wal-Jama'a).
+        </h5>
+        <h4 style="text-align: center;" class="fp"><b>Sakon Maraba</b></h4>
+        <h5 class="fp">Assalamu Alaikum Warahmatullah, 'yan uwa masoya manzan Allah (SAW) muna yi miku barka da zuwa wannan shafi namu
+          mai albarka, munayiwa kowa da kowa fatan alheri, Allah ya bamu nasara a rayuwa duniya da lahira, Iyayen Allah yayi musu rahama
+          ya albarkacesu a duniya da lahira. Mungode Sheikh Abdulwahab Abdallah (Imamu Ahlussunnah Wal-Jama'a).
+        </h5>
+      </div>
+    </div>
+  </div>
+  <section id="features">
+    <div class="row">
+      <div class="col-lg-4">
+        <h3 style="color: #11999E;" lang="Ar" class="t1">مرحبا بكم</h3>
+        <p style="text-align: right;" lang="Ar" class="t2">السلام عليكم ورحمة الله وبركته، نتمى لكم الخير ونسؤله سبحانه أن يدخلنا فسيه جنانه جميعا، إنه ولي ذلك
+          والقادر عليه. من فضيلة الشيخ عبد الوهاب عبد الله إمام أهل السنة والجماع، جمهورية نيجيريا
+        </p>
+      </div>
+      <div class="col-lg-4">
+        <h3 style="color: #11999E;" class="t1">Sakon Maraba (Fulfulde)</h3>
+        <p class="t2">Assalamu Alaikum Warahmatullah, 'yan uwa masoya manzan Allah (SAW) muna yi miku barka da zuwa wannan shafi namu
+          mai albarka, munayiwa kowa da kowa fatan alheri, Allah ya bamu nasara a rayuwa duniya da lahira, Iyayen Allah yayi musu rahama
+          ya albarkacesu a duniya da lahira. Mungode Sheikh Abdulwahab Abdallah (Imamu Ahlussunnah Wal-Jama'a).</p>
+      </div>
+      <div class="col-lg-4">
+        <h3 style="color: #11999E;" class="t1">Sakon Maraba (French)</h3>
+        <p class="t2">Assalamu Alaikum Warahmatullah, 'yan uwa masoya manzan Allah (SAW) muna yi miku barka da zuwa wannan shafi namu
+          mai albarka, munayiwa kowa da kowa fatan alheri, Allah ya bamu nasara a rayuwa duniya da lahira, Iyayen Allah yayi musu rahama
+          ya albarkacesu a duniya da lahira. Mungode Sheikh Abdulwahab Abdallah (Imamu Ahlussunnah Wal-Jama'a).</p>
+      </div>
+    </div>
+    <hr style="margin: 20px auto;">
+    <div class="touch" style="padding-bottom: 40px; background-color: #E4F9F5; padding-top: 20px;">
+      <h3>Get in Touch</h3>
+      <a href="{{url_for('About_Us_Page')}}" class="btn btn-primary" style="margin-top: 40px;">Get in Touch</a>
+      <br>
+    </div>
+  </section>
+
+  
+{% endblock %}

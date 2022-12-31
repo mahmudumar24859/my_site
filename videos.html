@@ -1,0 +1,65 @@
+{% extends 'base.html' %}
+  
+{% block title %}
+  Videos Page
+{% endblock %}
+  
+{% block content %}
+  <h1> Welcome to Our Videos Section</h1>
+  <p style="text-align: center;">By the Renowned Islamic Scholar Sheikh Abdulwahab Abdallah (Hafizahullah) <br> Imam Ahlussunnah Wal-Jama'a.</p>
+  <div class="row">
+    <div class="column col-lg-4">
+      <div class="card">
+        <a href="{{url_for('Sahih_Muslim_Video_Page')}}">
+          <img src="{{url_for('static', filename='sheikh abdulwahab.jpg')}}" alt="Sahih_Muslim_Video_Page" style="width:100%; padding: 10px;">
+        </a>
+        <h3 class="videoLinks">Sahih Muslim Videos</h3>
+      </div>
+    </div>
+    <div class="column col-lg-4">
+      <div class="card">
+        <a href="{{url_for('Sahih_Bukhari_Video_Page')}}">
+          <img src="{{url_for('static', filename='sheikh abdulwahab.jpg')}}" alt="Sahih_Bukhari_Video_Page" style="width:100%; padding: 10px;">
+        </a>
+        <h3 class="videoLinks">Sahih Bukhari Videos</h3>
+      </div>
+    </div>
+    <div class="column col-lg-4">
+      <div class="card">
+        <a href="{{url_for('Fatwa_Video_Page')}}">
+          <img src="{{url_for('static', filename='sheikh abdulwahab.jpg')}}" alt="Fatwa_Video_Page" style="width:100%; padding: 10px;">
+        </a>
+        <h3 class="videoLinks">Fatwa Videos</h3>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="column col-lg-4">
+      <div class="card">
+        <a href="{{url_for('Abu_Dawoud_Video_Page')}}">
+          <img src="{{url_for('static', filename='sheikh abdulwahab.jpg')}}" alt="Abu_Dawoud_Video" style="width:100%; padding: 10px;">
+        </a>
+        <h3 class="videoLinks">Abu Dawoud Videos</h3>
+      </div>
+    </div>
+    <div class="column col-lg-4">
+      <div class="card">
+        <a href="{{url_for('Lectures_Video_Page')}}">
+          <img src="{{url_for('static', filename='sheikh abdulwahab.jpg')}}" alt="Lectures Videos" style="width:100%; padding: 10px;">
+        </a>
+        <h3 class="videoLinks">Lectures Videos</h3>
+      </div>
+    </div>
+    <div class="column col-lg-4">
+      <div class="card">
+        <a href="{{url_for('Sermons_Video_Page')}}">
+          <img src="{{url_for('static', filename='sheikh abdulwahab.jpg')}}" alt="Sermons Videos" style="width:100%; padding: 10px;">
+        </a>
+        <h3 class="videoLinks">Sermons Videos</h3>
+      </div>
+    </div>
+  </div>
+  
+  
+  
+{% endblock %}
